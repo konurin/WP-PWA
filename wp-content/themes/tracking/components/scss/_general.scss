@@ -1,0 +1,57 @@
+body {
+  font-size: 16px;
+  font-family: $main_font;
+  color: $color_midnight_blue;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+a {
+  color: $color_carrot;
+  transition: all 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    color: $color_pumpkin;
+    text-decoration: underline;
+  }
+}
+
+.site-content {
+  padding-top: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1  {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
+}

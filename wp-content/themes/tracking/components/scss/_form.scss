@@ -1,0 +1,82 @@
+
+
+@mixin form_inputs{
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  textarea, select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid $color_midnight_blue;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@include form_inputs;
+
+#acf-form {
+  @include form_inputs;
+}
+
+input[type="submit"], input[type="button"], button, .btn {
+  border: 1px solid $color_midnight_blue;
+  background: transparent;
+  color: $color_midnight_blue!important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none!important;
+  display: inline-block;
+
+  &:hover {
+    color: #fff!important;
+    background: $color_midnight_blue;
+  }
+}
+
+.field {
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    position: relative;
+
+    > label, > .label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.acf-form-submit {
+  padding: 0 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.acf-fields > .acf-field:first-child {
+  padding-top: 0;
+}
+
+.auth-form {
+  max-width: 400px;
+}
+
+.error {
+  color: #8b0000;
+  font-size: 14px;
+  padding-top: 2px;
+  position: absolute;
+  bottom: -19px;
+}
